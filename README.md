@@ -1,2 +1,2 @@
-# miniprj_grp6
-miniproject for group 6
+# MLOps
+ML Ops GitHub Action workflows
