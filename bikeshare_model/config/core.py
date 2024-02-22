@@ -59,7 +59,7 @@ class ModelConfig(BaseModel):
     windspeed_var: str
         
     yr_mappings: Dict[int, int]
-    mnth_mappings: Dict[str, int]
+    mnth_mappings: Dict[str, str]
     season_mappings: Dict[str, int]
     weathersit_mappings: Dict[str, int]
     holiday_mappings: Dict[str, int]
