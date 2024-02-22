@@ -20,14 +20,13 @@ jobs:
         python-version: ${{matrix.python-version}}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements/test_requirements.txt
-    - name: train_pipeline
+        echo "something"
+        make install
+    - name: Lint with pylint
       run: |
-        python bikeshare_model/train_pipeline.py
-    - name: test_with_pytest
+        make lint
+    - name: test with pytest
       run: |
-        pytest 
-        
+        make test
       
     
